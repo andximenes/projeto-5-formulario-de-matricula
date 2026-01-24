@@ -16,13 +16,81 @@
     <div id="app">
         <main>
             <div class="main-container">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quam, vel eaque molestiae culpa architecto eligendi reiciendis aliquam repellat totam perferendis incidunt debitis illo fugiat maxime illum magni tempore facere.
+                <div class="back">
+                    <img src="./assets/icons/arrow-left-02.svg" alt="icone de voltar">
+                    <span>Voltar</span>
+                </div>
+
+                <h1>Formulário de matrícula</h1>
+                <p>Preencha os dados abaixo para matricular seu filho na escola de educação infantil Estrelas do Amanhã.</p>
+
+                <!-- informações da criança -->
+                <form action="" method="post" enctype="multipart/form-data">
+                    <fieldset class="child-info">
+                        <legend>informações da criança</legend>
+
+                        <div class="input-wrapper">
+                            <label 
+                                for="fullname">Nome completo</label>
+                            <input 
+                                type="text"
+                                name="fullname"
+                                id="fullname" 
+                                placeholder="Qual nome da criança"
+                            >
+                        </div>
+
+                        <div class="input-wapper">
+                            <label for="birth">Data de nascimento</label>
+                            <input 
+                                type="date"
+                                name="birth"
+                                id="birth"
+                                placeholder="Data de nascimento"
+                                lang="pt-br"
+                            >
+                        </div>
+
+                        <div class="select-wrapper">
+                            <label for="gender">Sexo</label>
+                            <select name="gender" id="gender">
+                                <option value="female">Feminino</option>
+                                <option value="male">Masculino</option>
+                                <option value="na">Prefiro não responder</option>
+                            </select>
+                        </div>
+
+                        <div class="textarea-wrapper">
+                            <label for="medical-info">Informações médicas</label>
+                            <textarea name="medical-info" id="medical-info" cols="30" rows="10" placeholder="A criança possui alguma condição medica que a escola deve ficar ciente? (Se sim, especifique)"></textarea>
+                        </div>
+
+                        <!-- toda vez que temos um input do tipo "file" na tag <form> precisamos adicionar a propriedade enctype="multipart/form-data" -->
+
+                        <div class="droparea-wrapper">
+                            <input 
+                                type="file"
+                                name="birth-file"
+                                id="birth-file"
+                            >
+                            <img src="./assets/icons/cloud-upload.svg" alt="">
+                            <p>Clique aqui para selecionar os arquivos</p>
+                        </div>
+                    </fieldset>
+                </form>
+
             </div>
         </main>
 
         <aside>
             <div class="aside-container">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt officiis minus mollitia vel quasi debitis sed fugit alias assumenda dolorem, eligendi ullam error cupiditate quidem harum pariatur ratione voluptatum vero!
+                <header>
+                    <img src="./assets/images/logo.svg" alt="logo estrelas do amanhã" >
+                    <h2>Porque cada momento de <span>aprendizado</span> conta</h2>
+                    <p>Inscreva seu filho em nossa escola e veja-o florescer em um ambiente acolhedor, seguro e estimulante.</p>
+                </header>
+
+                <img src="./assets/images/Illustration.svg" alt="ilustração de uma professora com crianças em volta prestando atenção">
             </div>
         </aside>
     </div>
