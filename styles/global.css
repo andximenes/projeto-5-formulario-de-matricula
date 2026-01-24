@@ -1,6 +1,12 @@
 /* usando o tamanho da fonte em "rem".
 calculo: se 32px -> 32/16 = 2rem */
 
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 :root{
     --font-family: 'Poppins', sans-serif;
     
@@ -19,4 +25,8 @@ calculo: se 32px -> 32/16 = 2rem */
     --stroke-highlight: #F3541C; /*Realce de contorno*/
     --semantic-error: #DC2626;
 
+}
+
+body{
+    overflow: hidden;
 }
