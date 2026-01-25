@@ -30,8 +30,7 @@
                         <legend>informações da criança</legend>
 
                         <div class="input-wrapper">
-                            <label 
-                                for="fullname">Nome completo</label>
+                            <label for="fullname">Nome completo</label>
                             <input 
                                 type="text"
                                 name="fullname"
@@ -53,7 +52,10 @@
 
                         <div class="select-wrapper">
                             <label for="gender">Sexo</label>
-                            <select name="gender" id="gender">
+                            <select 
+                                name="gender" 
+                                id="gender">
+                                
                                 <option value="female">Feminino</option>
                                 <option value="male">Masculino</option>
                                 <option value="na">Prefiro não responder</option>
@@ -62,7 +64,13 @@
 
                         <div class="textarea-wrapper">
                             <label for="medical-info">Informações médicas</label>
-                            <textarea name="medical-info" id="medical-info" cols="30" rows="10" placeholder="A criança possui alguma condição medica que a escola deve ficar ciente? (Se sim, especifique)"></textarea>
+                            <textarea 
+                                name="medical-info" 
+                                id="medical-info" 
+                                cols="30" 
+                                rows="10" 
+                                placeholder="A criança possui alguma condição medica que a escola deve ficar ciente? (Se sim, especifique)"
+                            ></textarea>
                         </div>
 
                         <!-- toda vez que temos um input do tipo "file" na tag <form> precisamos adicionar a propriedade enctype="multipart/form-data" -->
