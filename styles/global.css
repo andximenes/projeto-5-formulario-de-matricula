@@ -1,6 +1,12 @@
 /* usando o tamanho da fonte em "rem".
 calculo: se 32px -> 32/16 = 2rem */
 
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 :root{
     --font-family: 'Poppins', sans-serif;
     
@@ -20,4 +26,3 @@ calculo: se 32px -> 32/16 = 2rem */
     --semantic-error: #DC2626;
 
 }
-

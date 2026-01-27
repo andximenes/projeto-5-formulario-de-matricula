@@ -8,13 +8,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário de matrícula</title>
 
-    <link rel="stylesheet" href="./styles/index.csss">
+    <link rel="stylesheet" href="./styles/index.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="app">
+<<<<<<< HEAD
         
+=======
+        <main>
+            <div class="main-container">
+                <div class="back">
+                    <img src="./assets/icons/arrow-left-02.svg" alt="icone de voltar">
+                    <span>Voltar</span>
+                </div>
+
+                <h1>Formulário de matrícula</h1>
+                <p>Preencha os dados abaixo para matricular seu filho na escola de educação infantil Estrelas do Amanhã.</p>
+
+                <!-- informações da criança -->
+                <form action="" method="post" enctype="multipart/form-data">
+                    <fieldset class="child-info">
+                        <legend>informações da criança</legend>
+
+                        <div class="input-wrapper">
+                            <label for="fullname">Nome completo</label>
+                            <input 
+                                type="text"
+                                name="fullname"
+                                id="fullname" 
+                                placeholder="Qual nome da criança"
+                            >
+                        </div>
+
+                        <div class="input-wapper">
+                            <label for="birth">Data de nascimento</label>
+                            <input 
+                                type="date"
+                                name="birth"
+                                id="birth"
+                                placeholder="Data de nascimento"
+                                lang="pt-br"
+                            >
+                        </div>
+
+                        <div class="select-wrapper">
+                            <label for="gender">Sexo</label>
+                            <select 
+                                name="gender" 
+                                id="gender">
+                                
+                                <option value="female">Feminino</option>
+                                <option value="male">Masculino</option>
+                                <option value="na">Prefiro não responder</option>
+                            </select>
+                        </div>
+
+                        <div class="textarea-wrapper">
+                            <label for="medical-info">Informações médicas</label>
+                            <textarea 
+                                name="medical-info" 
+                                id="medical-info" 
+                                cols="30" 
+                                rows="10" 
+                                placeholder="A criança possui alguma condição medica que a escola deve ficar ciente? (Se sim, especifique)"
+                            ></textarea>
+                        </div>
+
+                        <!-- toda vez que temos um input do tipo "file" na tag <form> precisamos adicionar a propriedade enctype="multipart/form-data" -->
+
+                        <div class="droparea-wrapper">
+                            <input 
+                                type="file"
+                                name="birth-file"
+                                id="birth-file"
+                            >
+                            <img src="./assets/icons/cloud-upload.svg" alt="">
+                            <p>Clique aqui para selecionar os arquivos</p>
+                        </div>
+                    </fieldset>
+                </form>
+
+            </div>
+        </main>
+
+        <aside>
+            <div class="aside-container">
+                <header>
+                    <img src="./assets/images/logo.svg" alt="logo estrelas do amanhã" >
+                    <h2>Porque cada momento de <span>aprendizado</span> conta</h2>
+                    <p>Inscreva seu filho em nossa escola e veja-o florescer em um ambiente acolhedor, seguro e estimulante.</p>
+                </header>
+
+                <img src="./assets/images/Illustration.svg" alt="ilustração de uma professora com crianças em volta prestando atenção">
+            </div>
+        </aside>
+>>>>>>> d566aa6329702cdfb2672f5b88b20b47398e27d2
     </div>
 </body>
 </html>
