@@ -62,3 +62,20 @@ select{
     background-position: calc(100% - 1rem) center;
 
 }
+
+/*Aplica somente aonde tenha a classe flex*/
+.address .flex{
+    gap: 1.5rem;
+}
+
+.input-wrapper:has([disabled]){
+   opacity: 0.5; 
+}
+
+input{
+    &[disabled]{
+        background-color: var(--surface-disabled);
+        border: 1px solid var(--stroke-default);
+        color: var(--text-primary);
+    }
+}
